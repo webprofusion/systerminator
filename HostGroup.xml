@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<groups>
+	<group title="Test Group">
+		<item>TESTSERVER01</item>
+		<item>TESTSERVER02</item>
+		<item allowshutdown="false">STAGINGSERVER01</item>
+	</group>
+	<group title="Live Group">
+		<item>PRODSERVER01</item>
+		<item>PRODSERVER02</item>
+	</group>
+</groups>

@@ -1,0 +1,14 @@
+﻿<Window x:Class="Systerminator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="The Very Dangerous Shutdown Tool" Height="355" Width="565">
+    <Grid Name="grid1">
+        <Button Content="Ping All" Height="27" HorizontalAlignment="Left" Margin="407,76,0,0" Name="button1" VerticalAlignment="Top" Width="127" Click="button_PingAll" />
+        <DataGrid AutoGenerateColumns="True" Height="200" HorizontalAlignment="Left" Margin="30,76,0,0" Name="dataGrid1" VerticalAlignment="Top" Width="371" />
+        <Button Content="Execute Against All" Height="27" HorizontalAlignment="Left" Margin="407,284,0,0" Name="button2" VerticalAlignment="Top" Width="127" Click="button_ShutdownAll" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="30,47,0,0" Name="lstGroups" VerticalAlignment="Top" Width="177" SelectionChanged="lstGroups_SelectionChanged" />
+        <Label Content="System Shutdown Tool" Height="37" HorizontalAlignment="Left" Margin="30,0,0,0" Name="label1" VerticalAlignment="Top" FontSize="20" Width="236" FontWeight="Normal" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="101,288,0,0" Name="txtCommand" VerticalAlignment="Top" Width="272" Text="SHUTDOWN -r -t 3 -m \\{MachineName}" />
+        <Label Content="Command" Height="28" HorizontalAlignment="Left" Margin="30,286,0,0" Name="label2" VerticalAlignment="Top" />
+    </Grid>
+</Window>
